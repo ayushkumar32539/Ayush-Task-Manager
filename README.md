@@ -48,32 +48,6 @@ cd task-manager
      npm install
      ```
 
-   - Create a `.env` file in the `backend` directory with the following content:
-
-     ```env
-     DB_USER=postgres
-     DB_PASSWORD=admin
-     DB_HOST=localhost
-     DB_PORT=5432
-     DB_DATABASE=todo
-     ```
-
-   - Start the PostgreSQL server and create the database:
-
-     ```sql
-     CREATE DATABASE todo;
-     ```
-
-   - Create the required table:
-
-     ```sql
-     CREATE TABLE todoDetails (
-         todo_id SERIAL PRIMARY KEY,
-         title VARCHAR(255) NOT NULL,
-         description TEXT,
-         due_date DATE
-     );
-     ```
 
    - Start the backend server:
 
